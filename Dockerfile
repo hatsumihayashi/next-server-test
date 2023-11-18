@@ -1,6 +1,6 @@
 FROM node:20.9.0-slim
-WORKDIR /app
-COPY ./app/package.json .
+WORKDIR /src
+COPY ./src/package.json .
 RUN yarn install
-COPY ./app .
+COPY ./src .
 CMD ["yarn", "run", "dev"]
