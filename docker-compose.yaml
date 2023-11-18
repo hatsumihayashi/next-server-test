@@ -6,9 +6,5 @@ services:
       context: .
     volumes:
       - ./src:/src
-      - node_modules:/src/node_modules
     ports:
       - 3000:3000
-
-volumes:
-  node_modules:
