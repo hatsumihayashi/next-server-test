@@ -8,7 +8,7 @@ export default async function Page() {
     <div>
       {users.map((user) => {
         return (
-          <div>
+          <div key={`user-${user.id}`}>
             <h1>{user.name}</h1>
             <div>ID: {user.id}</div>
           </div>
