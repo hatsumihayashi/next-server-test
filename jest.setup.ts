@@ -1,2 +1,2 @@
 import "@testing-library/jest-dom";
-import "node-fetch";
+import "cross-fetch/polyfill";
